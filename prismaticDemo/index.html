@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.js"></script>
+		<![endif]-->
+		<style type="text/css">
+			@font-face {
+				font-family: 'DancingScript-Regular';
+				src:url(fonts/DancingScript-Regular.ttf) format('truetype');
+			}
+			@font-face {
+				font-family: 'OpenSans-Regular';
+				src:url(fonts/OpenSans-Regular.ttf) format('truetype');
+			}
+			#qwe{
+				width: 50%;
+				height: 30%;
+				background-image: url(/images/g1.jpg);
+
+			}
+			.service{
+				text-align: center;
+				padding: 4em 0 6em;
+				background: #eee;
+			}
+			.service h3{
+
+				font-size: 3.5em;
+				font-family: 'DancingScript-Regular';
+				color: #3b3772;
+			}
+
+			.service-grids{
+				width: 100%;
+				margin-left: 3em;
+				margin-top: 6em;		
+			}
+			.service-grid{
+				width: 25%;
+				float: left;
+			}
+
+			.service-grid-bg
+			{
+				background:#3b3772;
+				height: 200px;
+				width: 200px;
+				text-align: center;
+				position: relative;
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+
+
+			}
+			.service-grid-bg:hover
+			{
+				background: #04af82;
+			}
+			.service-grid-text
+			{
+				color: #fff;
+				position: absolute;
+				left: -32px;
+				top: 20px;
+				text-align: center;
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+			.service-grid-text span
+			{
+				color: #ffffff;
+				font-size: 1.4em;
+			}
+			.border
+			{
+				background: #fff;
+				margin: 1em auto;
+				width: 30%;
+				height: 1px;
+			}
+			.news{
+				padding: 4em 0;
+				text-align: center;
+				background: #eee;
+			}
+			.news h3{
+				font-size: 3.5em;
+				font-family: 'DancingScript-Regular';
+				color: #3b3772;
+
+			}
+			a.mask{
+				text-decoration: none;
+				overflow: hidden;
+				display: block;
+			}
+			img.zoom-img
+			{
+				-webkit-transform: scale(1,1);
+				-webkit-transition-timing-function: ease-in;
+				-webkit-transition-duration: 250ms;
+				-moz-transform: scale(1,1);
+				-moz-transition-timing-function: ease-in;
+				-moz-transition-duration: 250ms;
+			}
+			img.zoom-img:hover {
+				-webkit-transform: scale(1.1);
+				-webkit-transition-timing-function: ease-in;
+				-webkit-transition-duration: 750ms;
+				-moz-transform: scale(1.1);
+				-moz-transition-timing-function: ease-in;
+				-moz-transition-duration: 750ms;
+				overflow: hidden;
+			}
+			.team{
+				padding: 4em 0;
+				text-align: center;
+			}
+			.team h3{
+				font-size: 3.5em;
+				font-family: 'DancingScript-Regular';
+				color: #3b3772;
+			}
+			.team-grids{
+				margin: 2em 0;
+			}
+			.team-grid-left{
+				float: left;
+				width: 65%;
+				text-align: right;
+
+			}
+			.team-grid-left h4
+			{
+				margin: 0;
+				font-size: 1.5em;
+				color: #222;
+			}
+			.team-grid-left p{
+				color: #999;
+				font-size: 1em;
+				margin: 0.8em 0 0;
+				line-height: 1.8em;
+			}
+			.team-grid-right{
+				float: right;
+				width: 30%;
+			}
+			.aliquam{
+				float: left !important;
+				width: 30% !important;
+			}
+			.non{
+				float: right !important;
+				width: 65% !important;
+				text-align: left !important;
+			}
+			.team-grids:nth-child(2)
+			{
+				margin: 2em 0 0;
+			}
+			.team-grid:hover .team-grid-right{
+				transform: rotateY(360deg);
+				-webkit-transform: rotateY(360deg);
+				-o-transform: rotateY(360deg);
+				-ms-transform: rotateY(360deg);
+				-moz-transform: rotateY(360deg);
+				transition: 1s ease-out;
+				-webkit-transition: 1s  ease-out;
+				-moz-transition: 1s  ease-out;
+				-o-transition: 1s  ease-out;
+				-ms-transition: 1s  ease-out;
+			}
+
+
+		</style>
+
+	</head>
+	<body>
+
+		<div class="service">
+			<div class="container">
+				<h3>Features</h3>
+				<div class="service-grids">
+					<div class="service-grid">
+						<div class="service-grid-bg">
+							<div class="service-grid-text">
+								<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+								<div class="border"> </div>
+								<h5>NATURE</h5>
+								<p>Design is a response to a specific problem.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="service-grid">
+						<div class="service-grid-bg">
+							<div class="service-grid-text">
+								<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+								<div class="border"> </div>
+								<h5>WEDDING</h5>
+								<p>Design is a response to a specific problem.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="service-grid">
+						<div class="service-grid-bg">
+							<div class="service-grid-text">
+								<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+								<div class="border"> </div>
+								<h5>FASHION</h5>
+								<p>Design is a response to a specific problem.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="service-grid">
+						<div class="service-grid-bg">
+							<div class="service-grid-text">
+								<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+								<div class="border"> </div>
+								<h5>PORTRAIT</h5>
+								<p>Design is a response to a specific problem.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<div class="news">
+			<div class="container">
+				<h3>News</h3>
+				<div class="new-grids">
+					<div class="col-md-6 new-grid">
+						<a href="#" class="mask">
+							<img src="images/n1.jpg" class="img-responsive zoom-img" alt="">
+						</a>
+					</div>
+					<div class="col-md-6 new-grid1">
+						<h5>09|04</h5>
+						<h4><a href="#">in the beginning</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit.Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit.</p>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-md-6 new-grid">
+						<h5>09|04</h5>
+						<h4><a href="#">movement no.2</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit.Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit.</p>
+					</div>
+					<div class="col-md-6 new-grid">
+						<a href="#" class="mask">
+							<img src="images/n2.jpg" class="img-responsive zoom-img" alt="">
+
+						</a>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-md-6 new-grid">
+						<a href="#" class="mask">
+							<img src="images/n3.jpg" class="img-responsive zoom-img" alt="">
+						</a>
+
+					</div>
+					<div class="col-md-6 new-grid1">
+						<h5>09|04</h5>
+						<h4><a href="#">movement no.3</a></h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit.Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit.</p>
+						</div>
+						<div class="clearfix"></div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="team">
+				<div class="container">
+
+					<h3>Our Team</h3>
+
+					<div class="team-grids">
+
+						<div class="col-md-6 team-grid">
+							<div class="team-grid-left">
+								<h4>Mark Johnson </h4>
+								<p>Adipisci velit, sed quia non numquam eius modi tempora incidunt 
+									ut labore et dolore magnam aliquam quaerat voluptatem</p>
+
+								</div>
+								<div class="team-grid-right">
+									<img src="images/t1.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="clearfix"></div>
+
+							</div>
+							<div class="col-md-6 team-grid">
+								<div class="team-grid-right aliquam">
+									<img src="images/t2.jpg" alt=" " class="img-responsive" />
+								</div>
+								<div class="team-grid-left non">
+									<h4>Olivia Grosh </h4>
+									<p>Adipisci velit, sed quia non numquam eius modi tempora incidunt 
+										ut labore et dolore magnam aliquam quaerat voluptatem</p>
+									</div>
+
+									<div class="clearfix"> </div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+
+							<div class="team-grids">
+
+								<div class="col-md-6 team-grid">
+									<div class="team-grid-left">
+										<h4>Caroline Beek</h4>
+										<p>Adipisci velit, sed quia non numquam eius modi tempora incidunt 
+											ut labore et dolore magnam aliquam quaerat voluptatem</p>
+										</div>
+										<div class="team-grid-right">
+											<img src="images/t3.jpg" alt="" class="img-responsive">
+										</div>
+										<div class="clearfix"></div>
+
+									</div>
+									<div class="col-md-6 team-grid">
+										<div class="team-grid-right aliquam">
+											<img src="images/t4.jpg" alt=" " class="img-responsive" />
+										</div>
+										<div class="team-grid-left non">
+											<h4>Sam Kromstain</h4>
+											<p>Adipisci velit, sed quia non numquam eius modi tempora incidunt 
+												ut labore et dolore magnam aliquam quaerat voluptatem</p>
+											</div>
+
+											<div class="clearfix"> </div>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+
+
+
+								</div>
+
+
+
+
+							</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+							<script type="text/javascript" src="js/bootstrap.js"></script>
+						</body>
+						</html>
